@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles.css">
-    <title>APIs</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>GitHub User API</title>
 </head>
 <body>
+
+  <!-- Formulario de búsqueda -->
+  <div class="wrapper" id="search-container">
+    <h1>Buscar usuario de GitHub</h1>
+    <input type="text" id="username" placeholder="Ingresa un nombre de usuario" />
+    <button id="searchBtn">Buscar</button>
+  </div>
+
+  <!-- Contenedor de información del usuario -->
+  <div class="wrapper user-info">
     <p class="name"></p>
     <p class="blog"></p>
-
-  <script src="../assets/js/app.js"></script>
+    <p class="location"></p>
+  </div>
+  <script src="assets/js/app.js" defer></script>
 </body>
 </html>
