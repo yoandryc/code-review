@@ -1,11 +1,11 @@
 //* se selecciona el formulario por ID (antes se usaba un ID que no existía)
 const formulario = document.querySelector("#formulario");
 
-// ✅ Evento submit del formulario
+//*Evento submit del formulario
 formulario.onsubmit = function (event) {
   event.preventDefault(); //! Antes era e.prevent() -> Incorrecto
 
-  // ✅ Capturamos los elementos del formulario usando sus nombres
+  // *Capturamos los elementos del formulario usando sus nombres
   const nombreInput = formulario.elements["name"];
   const edadInput = formulario.elements["age"];
   const nacionalidadSelect = formulario.elements["nationality"];
@@ -14,7 +14,7 @@ formulario.onsubmit = function (event) {
   const edad = parseInt(edadInput.value);
   const nacionalidad = nacionalidadSelect.value;
 
-  // ✅ Limpiamos posibles errores anteriores
+  // *Limpiamos posibles errores anteriores
   nombreInput.classList.remove("error");
   edadInput.classList.remove("error");
 
