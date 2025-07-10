@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palabras</title>
+  <meta charset="UTF-8" />
+  <title>Live Coding 1 - Palabras</title>
 </head>
 <body>
-    <h1>Lista de palabras</h1>
-    <ul>
-        <!-- imprime los elementos de la lista  -->
-    </ul>
+  <h1>Filtrar palabras más largas</h1>
+
+  <!-- Input del usuario -->
+  <input type="text" id="input-palabra" placeholder="Escribe una palabra">
+  <button id="btn-filtrar">Filtrar</button>
+
+  <!-- Resultado -->
+  <h2>Palabras encontradas:</h2>
+  <ul id="resultado"></ul>
+
+  <!-- Conexión con app.js -->
+  <script src="app.js"></script>
 </body>
 </html>
