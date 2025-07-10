@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> 
 
 <head>
   <meta charset="UTF-8">
@@ -11,14 +11,21 @@
 
 <body>
 
-  <div>
-      <input type="text" placeholder="Seleccioná un color o tipo">
-      <button>Filtrar</button>
-      <h1>Lista de productos </h1>
-      <div id="lista-de-productos">
-    </div>
+  <div class="contenedor">
+      <!-- Se asigna un id al input para poder acceder a él desde JavaScript -->
+      <input id="input-busqueda" type="text" placeholder="Seleccioná un color o tipo">
+
+      <!-- Se agrega un id al boton para poder programar su funcionalidad -->
+      <button id="btn-filtrar">Filtrar</button>
+
+      <h1>Lista de productos</h1>
+
+      <!-- Este es el contenedor donde se mostrarán los productos filtrados -->
+      <div id="lista-de-productos"></div>
   </div>
-  <script src="../filtro.js"></script>
+
+  <!-- Se enlaza el archivo JavaScript al final para asegurar que el DOM esté completamente cargado -->
+  <script src="filtro.js"></script>
 </body>
 
 </html>
